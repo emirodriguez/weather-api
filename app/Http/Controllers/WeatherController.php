@@ -7,7 +7,6 @@ namespace App\Http\Controllers;
 use App\Services\WeatherService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
-use InvalidArgumentException;
 
 class WeatherController extends Controller
 {
@@ -25,6 +24,6 @@ class WeatherController extends Controller
 
         $weather = $this->weatherService->getCurrent($query);
 
-        return response()->json([$weather]);
+        return response()->json($weather);
     }
 }

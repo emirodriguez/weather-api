@@ -14,7 +14,7 @@ class WeatherStackAPI implements WeatherAPI
 
     public function __construct(
         private Client $httpClient
-    ){
+    ) {
     }
 
     public function getCurrent(string $query): CurrentWeatherResponse
