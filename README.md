@@ -8,6 +8,7 @@
 
 ## Tests
 
+- ./vendor/bin/sail artisan migrate --env=testing
 - `./vendor/bin/sail test`
 
 Example URL: http://localhost/api/current?query=New%20york
