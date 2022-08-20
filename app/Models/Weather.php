@@ -28,71 +28,71 @@ class Weather extends Model
 
     public function setQuery(string $query): void
     {
-        $this->query = $query;
+        $this->attributes['query'] = $query;
     }
 
     public function setObservationTime(string $observationTime): void
     {
-        $this->observationTime = $observationTime;
+        $this->attributes['observation_time'] = $observationTime;
     }
 
     public function setTemperature(float $temperature): void
     {
-        $this->temperature = $temperature;
+        $this->attributes['temperature'] = $temperature;
     }
 
     public function setDescription(string $description): void
     {
-        $this->description = $description;
+        $this->attributes['description'] = $description;
     }
 
     public function setWindSpeed(int $windSpeed): void
     {
-        $this->windSpeed = $windSpeed;
+        $this->attributes['wind_speed'] = $windSpeed;
     }
 
     public function setWindDegree(int $windDegree): void
     {
-        $this->windDegree = $windDegree;
+        $this->attributes['wind_degree'] = $windDegree;
     }
 
     public function setWindDir(string $windDir): void
     {
-        $this->windDir = $windDir;
+        $this->attributes['wind_dir'] = $windDir;
     }
 
     public function setPressure(int $pressure): void
     {
-        $this->pressure = $pressure;
+        $this->attributes['pressure'] = $pressure;
     }
 
     public function setPrecip(int $precip): void
     {
-        $this->precip = $precip;
+        $this->attributes['precip'] = $precip;
     }
 
     public function setHumidity(int $humidity): void
     {
-        $this->humidity = $humidity;
+        $this->attributes['humidity'] = $humidity;
     }
 
     public function setCloudCover(int $cloudCover): void
     {
-        $this->cloudCover = $cloudCover;
+        $this->attributes['cloudcover'] = $cloudCover;
     }
 
     public function setFeelsLike(float $feelsLike): void
     {
-        $this->feelsLike = $feelsLike;
+        $this->attributes['feels_like'] = $feelsLike;
     }
 
     public function setUvIndex(int $uvIndex): void
     {
-        $this->uvIndex = $uvIndex;
+        $this->attributes['uv_index'] = $uvIndex;
     }
 
     public function setVisibility(int $visibility): void
     {
-        $this->visibility = $visibility;
+        $this->attributes['visibility'] = $visibility;
     }
 }
