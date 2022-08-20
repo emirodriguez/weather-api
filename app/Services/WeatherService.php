@@ -34,20 +34,20 @@ class WeatherService
         $response = $this->weatherAPI->getCurrent($query);
 
         $weather = new Weather();
-        $weather->query = $query;
-        $weather->observation_time = $response->getObservationTime();
-        $weather->temperature = $response->getTemperature();
-        $weather->description = $response->getDescription();
-        $weather->wind_speed = $response->getWindSpeed();
-        $weather->wind_degree  = $response->getWindDegree();
-        $weather->wind_dir = $response->getWindDir();
-        $weather->pressure = $response->getPressure();
-        $weather->precip = $response->getPrecip();
-        $weather->humidity = $response->getHumidity();
-        $weather->cloudcover = $response->getCloudCover();
-        $weather->feels_like = $response->getFeelsLike();
-        $weather->uv_index = $response->getUvIndex();
-        $weather->visibility = $response->getVisibility();
+        $weather->setQuery($query);
+        $weather->setObservationTime($response->getObservationTime());
+        $weather->setTemperature($response->getTemperature());
+        $weather->setDescription($response->getDescription());
+        $weather->setWindSpeed($response->getWindSpeed());
+        $weather->setWindDegree($response->getWindDegree());
+        $weather->setWindDir($response->getWindDir());
+        $weather->setPressure($response->getPressure());
+        $weather->setPrecip($response->getPrecip());
+        $weather->setHumidity($response->getHumidity());
+        $weather->setCloudCover($response->getCloudCover());
+        $weather->setFeelsLike($response->getFeelsLike());
+        $weather->setUvIndex($response->getUvIndex());
+        $weather->setVisibility($response->getVisibility());
 
         return $weather;
     }
